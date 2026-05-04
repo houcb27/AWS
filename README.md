@@ -1,12 +1,12 @@
 # AWS Assignment 1 – VPC & Networking
 
-##  Overview
+## Overview
 
 This project demonstrates building a custom AWS network from scratch using a VPC with public and private subnets, secure routing, and EC2 instances.
 
 ---
 
-##  Architecture
+## Architecture
 
 * **VPC:** 10.0.0.0/16
 * **Public Subnet:** Internet-facing resources
@@ -21,29 +21,46 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 
 ---
 
-##  Architecture Diagram
+## Architecture Diagram
+
+![Architecture](./images/architecture-diagram.png)
 
 ---
 
-##  Steps Implemented
+## Steps Implemented
 
 ### 1. VPC
 
 * Created custom VPC with DNS enabled
+
+📸
+![VPC](./images/VPC.png)
 
 ### 2. Subnets
 
 * Public Subnet
 * Private Subnet
 
+📸 Public Subnet
+![Public Subnet](./images/PublicSubnet.png)
+
+📸 Private Subnet
+![Private Subnet](./images/PrivateSubnet.png)
+
 ### 3. Internet Gateway
 
 * Attached to VPC for public internet access
+
+📸
+![IGW](./images/IGW.png)
 
 ### 4. NAT Gateway
 
 * Deployed in public subnet
 * Enables outbound internet for private subnet
+
+📸
+![NAT](./images/NAT.png)
 
 ### 5. Route Tables
 
@@ -52,19 +69,22 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 
 ### 6. EC2 Instances
 
-####  Public EC2
+#### Public EC2
 
 * Has public IP
 * Running Nginx
 
-####  Private EC2
+📸
+![Nginx](./images/NGINX.png)
+
+#### Private EC2
 
 * No public IP
 * Access via SSH from public EC2
 
 ---
 
-##  Security
+## Security
 
 * Public EC2:
 
@@ -77,7 +97,7 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 
 ---
 
-##  Traffic Flow
+## Traffic Flow
 
 Internet → IGW → Public EC2
 Public EC2 → Private EC2 (SSH)
@@ -85,7 +105,7 @@ Private EC2 → NAT Gateway → Internet
 
 ---
 
-##  What I Learned
+## What I Learned
 
 * VPC networking fundamentals
 * Public vs Private subnet design
@@ -94,15 +114,11 @@ Private EC2 → NAT Gateway → Internet
 
 ---
 
-##  Tools Used
+## Tools Used
 
 * AWS VPC
 * EC2
 * NAT Gateway
 * Internet Gateway
 * Nginx
-
----
-
-##
 
