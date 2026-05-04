@@ -23,7 +23,7 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 
 ## Architecture Diagram
 
-![Architecture](./images/architecture-diagram.png)
+![Architecture](./images/Architecture.png)
 
 ---
 
@@ -33,7 +33,7 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 
 * Created custom VPC with DNS enabled
 
-📸
+
 ![VPC](./images/VPC.png)
 
 ### 2. Subnets
@@ -41,17 +41,17 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 * Public Subnet
 * Private Subnet
 
-📸 Public Subnet
+ Public Subnet
 ![Public Subnet](./images/PublicSubnet.png)
 
-📸 Private Subnet
+ Private Subnet
 ![Private Subnet](./images/PrivateSubnet.png)
 
 ### 3. Internet Gateway
 
 * Attached to VPC for public internet access
 
-📸
+
 ![IGW](./images/IGW.png)
 
 ### 4. NAT Gateway
@@ -59,7 +59,7 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 * Deployed in public subnet
 * Enables outbound internet for private subnet
 
-📸
+
 ![NAT](./images/NAT.png)
 
 ### 5. Route Tables
@@ -74,7 +74,7 @@ This project demonstrates building a custom AWS network from scratch using a VPC
 * Has public IP
 * Running Nginx
 
-📸
+
 ![Nginx](./images/NGINX.png)
 
 #### Private EC2
